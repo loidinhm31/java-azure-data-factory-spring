@@ -1,10 +1,10 @@
-package com.example.demo.service;
+package com.example.demo.services;
 
 import com.azure.core.http.rest.Response;
 import com.azure.resourcemanager.datafactory.DataFactoryManager;
 import com.azure.resourcemanager.datafactory.models.CreateRunResponse;
 import com.azure.resourcemanager.datafactory.models.PipelineRun;
-import com.example.demo.model.ADFResponse;
+import com.example.demo.models.ADFResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
