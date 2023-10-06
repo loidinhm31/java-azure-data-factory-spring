@@ -1,0 +1,10 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.repository.QdQExecHistoryRepository">
+    <select id="transferDataFromLast7Days">
+        SELECT * INTO ${tableName}
+        FROM master.dbo.qd_q_exec_history
+        WHERE started_at BETWEEN #{startDate} AND #{endDate}
+    </select>
+</mapper>
